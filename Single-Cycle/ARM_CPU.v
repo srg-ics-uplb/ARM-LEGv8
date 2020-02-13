@@ -503,7 +503,8 @@ module Registers
       Data[initCount] = initCount;
     end
 
-    Data[31] = 64’h00000000;
+    //Data[31] = 64’h00000000;
+    Data[31] = 0;
   end
 
   always @(read1, read2, writeReg, writeData, CONTROL_REGWRITE) begin
