@@ -85,6 +85,8 @@ module CPU_TEST;
 
   /* Setup the clock */
   initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars;
     CLOCK = 1'b0;
     #30 $finish;
   end

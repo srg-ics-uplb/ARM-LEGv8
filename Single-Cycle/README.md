@@ -1,5 +1,14 @@
 # Single-Cycle CPU
 
+## Testing in Ubuntu 18.04
+`$ sudo apt install iverilog`
+`$ iverilog -o CPU_TEST CPU_TEST.v ARM_CPU.v`
+`$ vvp -v CPU_TEST -i `
+`$ gtkwave waveform.vcd `
+
+
+
+
 ## Objective
 
 This functional single cycle (non-pipelined) processor is capable of performing basic arithmetic, logic and data operations. It is based on the ARM 64-bit architecture, with 32 registers each 64-bits wide with instruction lengths of 32-bits. 
