@@ -1,0 +1,61 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Feb 18 13:49:49 2020
+[*]
+[dumpfile] "/home/jachermocilla/Sources/github/ARM-LEGv8/Single-Cycle/waveform.vcd"
+[dumpfile_mtime] "Tue Feb 18 13:05:02 2020"
+[dumpfile_size] 12811
+[savefile] "/home/jachermocilla/Sources/github/ARM-LEGv8/Single-Cycle/add_x5_x3_x2.gtkw"
+[timestart] 0
+[size] 1180 600
+[pos] -5 34
+*-11.000000 4640 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] CPU_TEST.
+[treeopen] CPU_TEST.core.
+[treeopen] CPU_TEST.core.aluResult.
+[treeopen] CPU_TEST.core.mux4.
+[treeopen] CPU_TEST.mem2.
+[treeopen] CPU_TEST.mem3.
+[sst_width] 223
+[signals_width] 370
+[sst_expanded] 1
+[sst_vpaned_height] 152
+@28
+CPU_TEST.core.CLOCK
+@200
+-INSTRUCTION_MEMORY
+@22
+CPU_TEST.mem1.PC[63:0]
+CPU_TEST.mem1.CPU_Instruction[31:0]
+@200
+-REGISTER FILE
+@22
+CPU_TEST.mem2.data1[63:0]
+CPU_TEST.mem2.data2[63:0]
+CPU_TEST.mem2.writeReg[4:0]
+CPU_TEST.mem2.read2[4:0]
+CPU_TEST.mem2.read1[4:0]
+CPU_TEST.mem2.writeData[63:0]
+@200
+-ALU
+@22
+CPU_TEST.core.aluResult.A[63:0]
+CPU_TEST.core.aluResult.B[63:0]
+CPU_TEST.core.aluResult.RESULT[63:0]
+@200
+-FROM_MEM_OR_ALU_TO_REG
+@22
+CPU_TEST.core.mux4.aluOutput[63:0]
+CPU_TEST.core.mux4.out[63:0]
+@200
+-DATA MEMORY
+@800022
+CPU_TEST.mem3.inputAddress[63:0]
+@1001200
+-group_end
+@23
+CPU_TEST.mem3.inputData[63:0]
+@22
+CPU_TEST.mem3.outputData[63:0]
+[pattern_trace] 1
+[pattern_trace] 0

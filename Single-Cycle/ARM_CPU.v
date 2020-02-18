@@ -394,65 +394,66 @@ module Instruction_Memory
 
   initial begin
 
-    // LDUR x2, [x10]
-    Data[0] = 8'hF8;
-    Data[1] = 8'h40;
-    Data[2] = 8'h01;
-    Data[3] = 8'h42;
+    // ADD x5, x3, x2
+    Data[0] = 8'h8B;
+    Data[1] = 8'h02;
+    Data[2] = 8'h00;
+    Data[3] = 8'h65;
 
-    // LDUR x3, [x10, #1]
+    // LDUR x2, [x10]
     Data[4] = 8'hF8;
     Data[5] = 8'h40;
-    Data[6] = 8'h11;
-    Data[7] = 8'h43;
-
-    // SUB x4, x3, x2
-    Data[8] = 8'hCB;
-    Data[9] = 8'h02;
-    Data[10] = 8'h00;
-    Data[11] = 8'h64;
-
-    // ADD x5, x3, x2
-    Data[12] = 8'h8B;
-    Data[13] = 8'h02;
-    Data[14] = 8'h00;
-    Data[15] = 8'h65;
-
-    // CBZ x1, #2
-    Data[16] = 8'hB4;
-    Data[17] = 8'h00;
-    Data[18] = 8'h00;
-    Data[19] = 8'h41;
-
-    // CBZ x0, #2
-    Data[20] = 8'hB4;
-    Data[21] = 8'h00;
-    Data[22] = 8'h00;
-    Data[23] = 8'h40;
-
-    // LDUR x2 [x10]
-    Data[24] = 8'hF8;
-    Data[25] = 8'h40;
-    Data[26] = 8'h01;
-    Data[27] = 8'h42;
-
-    // ORR x6, x2, x3
-    Data[28] = 8'hAA;
-    Data[29] = 8'h03;
-    Data[30] = 8'h00;
-    Data[31] = 8'h46;
-
-    // AND x7, x2, x3
-    Data[32] = 8'h8A;
-    Data[33] = 8'h03;
-    Data[34] = 8'h00;
-    Data[35] = 8'h47;
+    Data[6] = 8'h01;
+    Data[7] = 8'h42;
 
     // STUR x4, [x7, #1]
-    Data[36] = 8'hF8;
-    Data[37] = 8'h00;
-    Data[38] = 8'h10;
-    Data[39] = 8'hE4;
+    Data[8] = 8'hF8;
+    Data[9] = 8'h00;
+    Data[10] = 8'h10;
+    Data[11] = 8'hE4;
+
+    // CBZ x1, #2
+    Data[12] = 8'hB4;
+    Data[13] = 8'h00;
+    Data[14] = 8'h00;
+    Data[15] = 8'h41;
+
+    // LDUR x3, [x10, #1]
+    Data[16] = 8'hF8;
+    Data[17] = 8'h40;
+    Data[18] = 8'h11;
+    Data[19] = 8'h43;
+
+    // SUB x4, x3, x2
+    Data[20] = 8'hCB;
+    Data[21] = 8'h02;
+    Data[22] = 8'h00;
+    Data[23] = 8'h64;
+
+    // CBZ x0, #2
+    Data[24] = 8'hB4;
+    Data[25] = 8'h00;
+    Data[26] = 8'h00;
+    Data[27] = 8'h40;
+
+    // LDUR x2 [x10]
+    Data[28] = 8'hF8;
+    Data[29] = 8'h40;
+    Data[30] = 8'h01;
+    Data[31] = 8'h42;
+
+    // ORR x6, x2, x3
+    Data[32] = 8'hAA;
+    Data[33] = 8'h03;
+    Data[34] = 8'h00;
+    Data[35] = 8'h46;
+
+    // AND x7, x2, x3
+    Data[36] = 8'h8A;
+    Data[37] = 8'h03;
+    Data[38] = 8'h00;
+    Data[39] = 8'h47;
+
 
     // B #2
     Data[40] = 8'h14;
