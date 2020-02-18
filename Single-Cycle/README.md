@@ -2,8 +2,11 @@
 
 ## Testing in Ubuntu 18.04
 `$ sudo apt install iverilog`
+
 `$ iverilog -o CPU_TEST CPU_TEST.v ARM_CPU.v`
+
 `$ vvp -v CPU_TEST -i `
+
 `$ gtkwave waveform.vcd `
 
 
