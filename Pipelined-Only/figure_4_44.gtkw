@@ -1,0 +1,152 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Mar  3 12:40:13 2020
+[*]
+[dumpfile] "/home/jachermocilla/Sources/github/ARM-LEGv8/Pipelined-Only/waveform.vcd"
+[dumpfile_mtime] "Tue Mar  3 12:33:45 2020"
+[dumpfile_size] 16230
+[savefile] "/home/jachermocilla/Sources/github/ARM-LEGv8/Pipelined-Only/figure_4_44.gtkw"
+[timestart] 0
+[size] 1360 736
+[pos] -1 -1
+*-12.000000 8350 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] CPU_TEST.
+[treeopen] CPU_TEST.core.
+[sst_width] 223
+[signals_width] 422
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@200
+-INSTRUCTION MEMORY
+@22
+CPU_TEST.mem1.PC_in[63:0]
+CPU_TEST.mem1.instruction_out[31:0]
+@200
+-IF/ID
+@28
+CPU_TEST.core.cache1.CLOCK
+@22
+CPU_TEST.core.cache1.IC_in[31:0]
+CPU_TEST.core.cache1.IC_out[31:0]
+CPU_TEST.core.cache1.PC_in[63:0]
+CPU_TEST.core.cache1.PC_out[63:0]
+@200
+-REGISTER FILE
+@28
+CPU_TEST.core.unit3.CLOCK
+CPU_TEST.core.unit3.CONTROL_REGWRITE
+@22
+CPU_TEST.core.unit3.data1[63:0]
+CPU_TEST.core.unit3.data2[63:0]
+@420
+CPU_TEST.core.unit3.initCount
+@22
+CPU_TEST.core.unit3.read1[4:0]
+CPU_TEST.core.unit3.read2[4:0]
+CPU_TEST.core.unit3.writeData[63:0]
+CPU_TEST.core.unit3.writeReg[4:0]
+@200
+-ID/EX
+@28
+CPU_TEST.core.cache2.CLOCK
+@22
+CPU_TEST.core.cache2.PC_in[63:0]
+CPU_TEST.core.cache2.PC_out[63:0]
+CPU_TEST.core.cache2.alu_control_in[10:0]
+CPU_TEST.core.cache2.alu_control_out[10:0]
+@28
+CPU_TEST.core.cache2.aluop_in[1:0]
+CPU_TEST.core.cache2.aluop_out[1:0]
+CPU_TEST.core.cache2.alusrc_in
+CPU_TEST.core.cache2.alusrc_out
+CPU_TEST.core.cache2.isUnconBranch_in
+CPU_TEST.core.cache2.isUnconBranch_out
+CPU_TEST.core.cache2.isZeroBranch_in
+CPU_TEST.core.cache2.isZeroBranch_out
+CPU_TEST.core.cache2.mem2reg_in
+CPU_TEST.core.cache2.mem2reg_out
+CPU_TEST.core.cache2.memRead_in
+CPU_TEST.core.cache2.memRead_out
+CPU_TEST.core.cache2.memwrite_in
+CPU_TEST.core.cache2.memwrite_out
+@22
+CPU_TEST.core.cache2.regdata1_in[63:0]
+CPU_TEST.core.cache2.regdata1_out[63:0]
+CPU_TEST.core.cache2.regdata2_in[63:0]
+CPU_TEST.core.cache2.regdata2_out[63:0]
+@28
+CPU_TEST.core.cache2.regwrite_in
+CPU_TEST.core.cache2.regwrite_out
+@22
+CPU_TEST.core.cache2.sign_extend_in[63:0]
+CPU_TEST.core.cache2.sign_extend_out[63:0]
+CPU_TEST.core.cache2.write_reg_in[4:0]
+CPU_TEST.core.cache2.write_reg_out[4:0]
+@200
+-ALU MAIN
+@22
+CPU_TEST.core.main_alu.A[63:0]
+CPU_TEST.core.main_alu.B[63:0]
+CPU_TEST.core.main_alu.CONTROL[3:0]
+CPU_TEST.core.main_alu.RESULT[63:0]
+@28
+CPU_TEST.core.main_alu.ZEROFLAG
+@200
+-EX/MEM
+@28
+CPU_TEST.core.cache3.CLOCK
+@22
+CPU_TEST.core.cache3.alu_result_in[63:0]
+CPU_TEST.core.cache3.alu_result_out[63:0]
+@28
+CPU_TEST.core.cache3.alu_zero_in
+CPU_TEST.core.cache3.alu_zero_out
+CPU_TEST.core.cache3.isUnconBranch_in
+CPU_TEST.core.cache3.isUnconBranch_out
+CPU_TEST.core.cache3.isZeroBranch_in
+CPU_TEST.core.cache3.isZeroBranch_out
+CPU_TEST.core.cache3.mem2reg_in
+CPU_TEST.core.cache3.mem2reg_out
+CPU_TEST.core.cache3.memRead_in
+CPU_TEST.core.cache3.memRead_out
+CPU_TEST.core.cache3.memwrite_in
+CPU_TEST.core.cache3.memwrite_out
+CPU_TEST.core.cache3.regwrite_in
+CPU_TEST.core.cache3.regwrite_out
+@22
+CPU_TEST.core.cache3.shifted_PC_in[63:0]
+CPU_TEST.core.cache3.shifted_PC_out[63:0]
+CPU_TEST.core.cache3.write_data_mem_in[63:0]
+CPU_TEST.core.cache3.write_data_mem_out[63:0]
+CPU_TEST.core.cache3.write_reg_in[4:0]
+CPU_TEST.core.cache3.write_reg_out[4:0]
+@200
+-DATA MEM
+@28
+CPU_TEST.mem2.CONTROL_MemRead
+CPU_TEST.mem2.CONTROL_MemWrite
+@420
+CPU_TEST.mem2.initCount
+@22
+CPU_TEST.mem2.inputAddress[63:0]
+CPU_TEST.mem2.inputData[63:0]
+CPU_TEST.mem2.outputData[63:0]
+@201
+-MEM/WB
+@28
+CPU_TEST.core.cache4.CLOCK
+CPU_TEST.core.cache4.mem2reg_in
+CPU_TEST.core.cache4.mem2reg_out
+@22
+CPU_TEST.core.cache4.mem_address_in[63:0]
+CPU_TEST.core.cache4.mem_address_out[63:0]
+CPU_TEST.core.cache4.mem_data_in[63:0]
+CPU_TEST.core.cache4.mem_data_out[63:0]
+@28
+CPU_TEST.core.cache4.regwrite_in
+CPU_TEST.core.cache4.regwrite_out
+@22
+CPU_TEST.core.cache4.write_reg_in[4:0]
+CPU_TEST.core.cache4.write_reg_out[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

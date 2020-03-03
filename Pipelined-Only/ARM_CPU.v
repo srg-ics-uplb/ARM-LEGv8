@@ -424,7 +424,7 @@ module Data_Memory
   output reg [63:0] outputData
 );
 
-  reg [63:0] Data[31:0];
+  reg [63:0] Data[63:0];
 
   integer initCount;
 
@@ -433,8 +433,14 @@ module Data_Memory
       Data[initCount] = initCount * 100;
     end
 
+/*
    Data[10] = 1540;
    Data[11] = 2117;
+*/
+
+   //based on figure 4.42
+   Data[41] = 64'hAA;
+   Data[49] = 64'hBB;
   end
 
     always @(*) begin
