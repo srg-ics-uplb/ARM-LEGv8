@@ -332,6 +332,7 @@ module IC
     Data[3] = 8'h01;
     */
 
+/*
   	// LDUR x2, [x9, #1]
     Data[0] = 8'hf8;
     Data[1] = 8'h40;
@@ -367,6 +368,41 @@ module IC
     Data[21] = 8'h00;
     Data[22] = 8'h03;
     Data[23] = 8'he2;
+*/
+
+   //figure 4.42
+  	// LDUR x10,[x1,#40]
+    Data[0] = 8'hf8;
+    Data[1] = 8'h42;
+    Data[2] = 8'h80;
+    Data[3] = 8'h2a;
+
+    // SUB x11, x2, x3
+    Data[4] = 8'hcb;
+    Data[5] = 8'h03;
+    Data[6] = 8'h00;
+    Data[7] = 8'h4b;
+
+    // ADD x12,x3,x4
+    Data[8] = 8'h8b;
+    Data[9] = 8'h04;
+    Data[10] = 8'h00;
+    Data[11] = 8'h6c;
+
+    // LDUR x13,[x1,#48]
+    Data[12] = 8'hf8;
+    Data[13] = 8'h43;
+    Data[14] = 8'h00;
+    Data[15] = 8'h2d;
+
+    // ADD x14,x5,x6
+    Data[16] = 8'h8b;
+    Data[17] = 8'h06;
+    Data[18] = 8'h00;
+    Data[19] = 8'hae;
+
+
+
 
   end
 
